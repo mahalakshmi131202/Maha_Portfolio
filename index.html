@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maha Lakshmi Malli | Data Analyst Portfolio</title>
+  <meta name="description" content="Maha Lakshmi Malli — data analytics-focused Computer Science master’s student. Explore SQL, Python, Excel, and Power BI projects across retail, customer behavior, and public health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <a class="nav-logo" href="#top"><span class="monogram">MM</span> Maha Malli</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+    <div class="nav-links" id="navigation">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container" id="main">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-inner">
+
+        <!-- Text side -->
+        <div class="hero-text">
+          <div class="hero-eyebrow"><span></span> Aspiring data analyst</div>
+          <p class="hero-intro">Hi, I’m Maha Lakshmi Malli.</p><h1>I turn data into<br><em>clear decisions.</em></h1>
+          <p class="hero-desc">Computer Science master’s student at Wright State University, focused on data analytics. I use SQL, Python, Excel, and Power BI to clean data, build dashboards, and uncover customer, sales, and public-health trends.</p>
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              Wright State University, Dayton OH
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              M.S. Computer Science · Expected December 2026
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">Explore my projects ↗</a>
+            <a href="Maha-Lakshmi-Malli-Resume.pdf" class="btn-outline" download>Download resume ↓</a>
+          </div>
+        </div>
+
+        <!-- Photo: replace images/maha-photo.jpg to use a different portrait. -->
+        <figure class="hero-photo-wrap">
+          <div class="hero-photo"><img src="images/maha-photo.jpg" alt="Maha Lakshmi Malli" width="1237" height="1600" fetchpriority="high" /></div>
+          <figcaption class="profile-caption"><span>Maha Lakshmi Malli</span><span>Dayton, Ohio ↗</span></figcaption>
+        </figure>
+
+      </div>
+      <div class="highlights" aria-label="Project highlights"><div><strong>96K+</strong><span>Records analyzed</span></div><div><strong>$2.22M</strong><span>Retail sales analyzed</span></div><div><strong>3</strong><span>End-to-end analytics projects</span></div></div>
+      <div class="hero-strip"><span>MY TOOLKIT</span><p>SQL <i>/</i> Python <i>/</i> Excel <i>/</i> Power BI</p><a href="#projects">Explore the work ↓</a></div>
+    </div>
+      <!-- EDUCATION -->
+    <section id="education">
+  <div class="section-header">
+    <div class="section-label">03 / MY BACKGROUND</div>
+    <h2 class="section-title">Education</h2>
+  </div>
+
+  <div class="education-grid">
+    <div class="edu-card">
+      <div class="edu-logo" aria-hidden="true">↗</div>
+      <div>
+        <div class="edu-degree">M.S. Computer Science</div>
+        <div class="edu-school">
+          Wright State University · Dayton, Ohio
+        </div>
+        <div class="edu-year">
+          January 2025 – December 2026 · GPA: 3.5
+        </div>
+        <div class="edu-status">Master’s degree · In progress</div>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-logo" aria-hidden="true">↗</div>
+      <div>
+        <div class="edu-degree">B.E. Computer Science</div>
+        <div class="edu-school">
+          Jawaharlal Nehru Technological University Anantapur · India
+        </div>
+        <div class="edu-year">
+          July 2020 – May 2024 · GPA: 3.5
+        </div>
+        <div class="edu-status">Bachelor’s degree · Completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #education .education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  #education .education-grid .edu-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 0;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+
+  #education .edu-card > div:last-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 700px) {
+    #education .education-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    #education .education-grid .edu-card {
+      padding: 22px;
+    }
+  }
+</style>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header">
+        <div class="section-label">THE TOOLKIT</div>
+        <h2 class="section-title">Skills &amp; tools</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap" aria-hidden="true">SQL</div>
+          <div class="skill-name">SQL & Databases</div>
+          <div class="skill-level">SQL · MySQL · SQLite · CTEs · Window functions</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap" aria-hidden="true">XLS</div>
+          <div class="skill-name">Excel & Power Query</div>
+          <div class="skill-level">PivotTables · XLOOKUP · Data cleaning</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap" aria-hidden="true">PY</div>
+          <div class="skill-name">Python & Libraries</div>
+          <div class="skill-level">Pandas · NumPy · Scikit-learn</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap" aria-hidden="true">BI</div>
+          <div class="skill-name">Business Intelligence</div>
+          <div class="skill-level">Power BI · DAX · Google Looker Studio</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap" aria-hidden="true">EDA</div>
+          <div class="skill-name">Analysis & Visualization</div>
+          <div class="skill-level">EDA · ETL · Statistical analysis · Matplotlib · Seaborn</div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap" aria-hidden="true">DEV</div>
+          <div class="skill-name">Development Tools</div>
+          <div class="skill-level">Jupyter Notebook · MySQL Workbench · Git · GitHub · Google Workspace</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header">
+        <div class="section-label">SELECTED WORK</div>
+        <h2 class="section-title">A closer look at the data.</h2>
+      </div>
+      <div class="projects-list">
+
+        <article class="project-card project-1"><div class="project-number">PROJECT / 01</div><div class="project-header"><h3 class="project-title">Bike Sales Analysis Dashboard</h3><span class="project-badge badge-purple">Power BI</span></div><p class="project-desc">Cleaned and segmented 1,000+ customer records using Excel and Power Query. Built an interactive Power BI dashboard with DAX KPIs and slicers to explore purchasing behavior across demographics and commute distance.</p><div class="project-metric"><strong>58.9%</strong><span>Purchase rate in the Pacific region</span></div><details class="project-findings"><summary>Key findings</summary><p>2–5-mile commuters had a 58.6% purchase rate, compared with 29.7% for 10+-mile commuters. Middle-aged customers led age groups at 54.6%.</p></details><div class="project-tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">Power BI</span><span class="tag">DAX</span></div></article>
+
+        <article class="project-card project-2"><div class="project-number">PROJECT / 02</div><div class="project-header"><h3 class="project-title">Global COVID-19 Impact Analysis</h3><span class="project-badge badge-pink">SQL</span></div><p class="project-desc">Joined deaths and vaccination datasets across 85K+ records. Used SQL CTEs, COALESCE, aggregations, and window functions to analyze infection, mortality, and cumulative vaccination trends for a Power BI dashboard.</p><div class="project-metric"><strong>85K+</strong><span>Records analyzed</span></div><details class="project-findings"><summary>Key findings</summary><p>The analyzed dataset contained 150.6M global cases and 3.18M deaths, a 2.11% death rate. Andorra had the highest infection rate at 17.13%. These are historical project findings.</p></details><div class="project-tags"><span class="tag">SQL</span><span class="tag">SQLite</span><span class="tag">Power BI</span><span class="tag">Window functions</span></div></article>
+
+        <article class="project-card project-3"><div class="project-number">PROJECT / 03</div><div class="project-header"><h3 class="project-title">End-to-End Retail Sales Analytics</h3><span class="project-badge badge-cyan">Python</span></div><p class="project-desc">Built an ETL workflow for 9,994 retail orders using Python and Pandas. Cleaned raw data and engineered discount, sale price, and profit metrics, then used SQL to compare products, regions, and year-over-year performance.</p><div class="project-metric"><strong>$2.22M</strong><span>Total sales · $205K profit</span></div><details class="project-findings"><summary>Key findings</summary><p>Technology led sales at $806.9K, the West led regions at $699.9K, and Chairs led sub-category profit at $29.8K. Sales grew 2.25% from 2022 to 2023.</p></details><div class="project-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span><span class="tag">ETL</span></div></article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <div class="section-label">GET IN TOUCH</div>
+        <h2 class="section-title">Let’s start a conversation.</h2><p class="contact-intro">Interested in my work? I’d love to connect.</p>
+      </div>
+      <div class="contact-grid">
+
+        <a href="mailto:mallimahalakshmi3@gmail.com" class="contact-card">
+          <div class="contact-icon" aria-hidden="true">@</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">mallimahalakshmi3@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/maha-lakshmi-malli-732902245/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon" aria-hidden="true">in</div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/Mahalakshmimalli</div>
+          </div>
+        </a>
+
+        <a href="tel:+19372197636" class="contact-card"><div class="contact-icon" aria-hidden="true">↗</div><div><div class="contact-label">Phone</div><div class="contact-value">+1 937-219-7636</div></div></a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; 2026 Maha Lakshmi Malli</span><span>Made with curiosity &amp; a love for data.</span><a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
