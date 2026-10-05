@@ -1,0 +1,6 @@
+MAHA LAKSHMI MALLI — WARM NEUTRAL PORTFOLIO
+
+Extract the whole ZIP, then open index.html.
+Keep the images folder, CSS, JavaScript, and resume PDF together.
+Your original portrait is already included as images/maha-photo.jpg.
+To replace the photo, replace that image file; no website upload is needed.
